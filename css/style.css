@@ -12,9 +12,7 @@ body {
 
 #main-header .port-item {
   width: 30%;
-  
 }
-
 
 #main-header .port-item:hover {
   opacity: 0.8;
