@@ -186,7 +186,7 @@
             <li>Bridging the gap between design and development concerns.</li>
             <li>Project management experience from high-profile projects.</li>
             <li>
-              Listening to client needs and translating to technical needs.
+              Listening to client wants and translating to technical needs.
             </li>
             <li>Effective communicator with both clients and team members.</li>
             <li>Delivering complex concepts in a simple fashion.</li>
@@ -456,10 +456,15 @@
       </div>
 
       <!-- FOOTER -->
-      <footer id="main-footer" class="p-5 bg-dark text-white">
-        <div class="row">
-          <h6>footer</h6>
-        </div>
+      <footer id="main-footer" class="py-5 bg-dark text-white">
+          <div class="row text-center">
+            <div class="col-md-12 ml-auto">
+              <p class="lead">
+                Copyright &copy;
+                <span id="year"></span>
+              </p>
+            </div>
+          </div>
       </footer>
     </div>
 
@@ -481,6 +486,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
     <script>
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+
       $(".port-item").click(function () {
         $(".collapse").collapse("hide");
       });
