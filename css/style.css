@@ -37,6 +37,15 @@ h5 {
   margin: 0.4rem;
 }
 
+.captcha {
+  max-width: 100% !important;
+  transform: scale(0.77) !important;
+  -webkit-transform: scale(0.77) !important;
+  transform-origin: center center !important;
+  -webkit-transform-origin: center center !important;
+  margin-left: 5px;
+}
+
 /* Cursor */
 .txt-type > .txt {
   border-right: 0.2rem solid #fff;
