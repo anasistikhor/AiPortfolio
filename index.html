@@ -275,64 +275,56 @@
           <div class="card-deck">
             <div class="card border-0">
               <form
-                name="contact"
-                method="POST"
+                method="post"
                 data-netlify-recaptcha="true"
                 data-netlify="true"
               >
-                <div class="form-group">
-                  <div class="input-group input-group-lg">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text bg-primary text-white">
-                        <i class="fas fa-user"></i>
-                      </span>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="inputName">Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputName"
+                        required
+                      />
                     </div>
-                    <input
-                      type="text"
-                      name="name"
-                      required=""
-                      placeholder="Your Name (required)"
-                      class="form-control border border-primary shadow-none"
-                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="inputEmail">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="inputEmail"
+                        required
+                      />
+                    </div>
                   </div>
                 </div>
-
                 <div class="form-group">
-                  <div class="input-group input-group-lg">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text bg-success text-white">
-                        <i class="fas fa-envelope"></i>
-                      </span>
-                    </div>
-                    <input
-                      type="email"
-                      name="email"
-                      required=""
-                      placeholder="Enter Email (required)"
-                      class="form-control border border-success shadow-none"
-                    />
-                  </div>
+                  <label for="inputSubject">Subject</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputSubject"
+                    required
+                  />
                 </div>
-
                 <div class="form-group">
-                  <div class="input-group input-group-lg">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text bg-warning text-dark">
-                        <i class="fas fa-pencil-alt"></i>
-                      </span>
-                    </div>
-                    <textarea
-                      rows="6"
-                      placeholder="Your Message"
-                      required=""
-                      class="form-control border border-warning shadow-none"
-                    ></textarea>
-                  </div>
+                  <label for="inputMessage">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="inputMessage"
+                    rows="5"
+                    required
+                  ></textarea>
                 </div>
                 <div data-netlify-recaptcha="true"></div>
-                <div>
-                  <button class="btn btn-danger btn-lg" type="Send">
-                    Send
+                <div class="text-left">
+                  <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-paper-plane"></i> Send
                   </button>
                 </div>
               </form>
