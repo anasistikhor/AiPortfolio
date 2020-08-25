@@ -277,7 +277,7 @@
         <div class="card card-body py-5">
           <h3 class="text-primary">Send me a message</h3>
           <div class="card-deck">
-            <div class="card card-body border-0">
+            <div class="card card-body border border-primary shadow">
               <form
                 method="post"
                 data-netlify-recaptcha="true"
@@ -325,7 +325,11 @@
                     required
                   ></textarea>
                 </div>
-                <div data-netlify-recaptcha="true"></div>
+                <div class="row">
+                  <div class="col-md-4 col-lg-3">
+                    <div data-netlify-recaptcha="true"></div>
+                  </div>
+                </div>
                 <p>
                 <div class="text-left">
                   <button type="submit" class="btn btn-primary">
