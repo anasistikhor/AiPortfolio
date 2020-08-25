@@ -39,8 +39,8 @@ h5 {
 
 .captcha {
   max-width: 100% !important;
-  transform: scale(1) !important;
-  -webkit-transform: scale(1) !important;
+  transform: scale(0.9) !important;
+  -webkit-transform: scale(0.9) !important;
   transform-origin: left left !important;
   -webkit-transform-origin: left left !important;
   margin-left: 5px;
