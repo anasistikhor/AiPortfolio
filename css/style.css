@@ -37,14 +37,14 @@ h5 {
   margin: 0.4rem;
 }
 
-.captcha {
+/*.captcha {
   max-width: 100% !important;
   transform: scale(0.85) !important;
   -webkit-transform: scale(0.85) !important;
   transform-origin: left center !important;
   -webkit-transform-origin: left center !important;
   margin-left: 5px;
-}
+}*/
 
 /* Cursor */
 .txt-type > .txt {
