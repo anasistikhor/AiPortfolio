@@ -271,6 +271,7 @@
         </div>
 
         <div class="card card-body py-5">
+          <h3 class="text-primary">Send me a message</h3>
           <div class="card-deck">
             <div class="card border-0">
               <form
@@ -290,8 +291,8 @@
                       type="text"
                       name="name"
                       required=""
-                      placeholder="Name"
-                      class="form-control border border-primary"
+                      placeholder="Your Name (required)"
+                      class="form-control border border-primary shadow-none"
                     />
                   </div>
                 </div>
@@ -307,8 +308,8 @@
                       type="email"
                       name="email"
                       required=""
-                      placeholder="Email"
-                      class="form-control border border-success"
+                      placeholder="Enter Email (required)"
+                      class="form-control border border-success shadow-none"
                     />
                   </div>
                 </div>
@@ -322,16 +323,16 @@
                     </div>
                     <textarea
                       rows="6"
-                      placeholder="Message"
+                      placeholder="Your Message"
                       required=""
-                      class="form-control border border-warning"
+                      class="form-control border border-warning shadow-none"
                     ></textarea>
                   </div>
                 </div>
                 <div data-netlify-recaptcha="true"></div>
                 <div>
-                  <button class="btn btn-danger btn-lg" type="Submit">
-                    Submit
+                  <button class="btn btn-danger btn-lg" type="Send">
+                    Send
                   </button>
                 </div>
               </form>
