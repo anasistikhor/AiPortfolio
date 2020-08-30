@@ -17,12 +17,29 @@ body {
 #main-header .card-img-overlay {
   background-color: rgba(46, 49, 49, 0.4);
   object-fit: cover;
+  backdrop-filter: blur(5px);
+}
+
+#main-header .txt-assist {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: normal;
+  border: 2px solid #f1f1f1;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 90%;
+  padding: 20px;
+  text-align: center;
 }
 
 #main-header .btn-smw {
   position: absolute;
   bottom: 10px;
-  left: 20px;
+  left: 25px;
 }
 
 #main-header .port-item {
