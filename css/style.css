@@ -17,8 +17,8 @@ body {
 #main-header .card-img-overlay {
   background-color: rgba(46, 49, 49, 0.4);
   object-fit: cover;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 #main-header .txt-assist {
