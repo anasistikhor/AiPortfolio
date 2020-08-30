@@ -18,6 +18,7 @@ body {
   background-color: rgba(46, 49, 49, 0.4);
   object-fit: cover;
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 #main-header .txt-assist {
