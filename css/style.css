@@ -15,14 +15,14 @@ body {
 }
 
 #main-header .card-img-overlay {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   //object-fit: cover;
 }
 
 #main-header .btn-smw {
   position: absolute;
-  bottom: 30px;
-  left: 15px;
+  bottom: 15px;
+  left: 20px;
 }
 
 #main-header .port-item {
