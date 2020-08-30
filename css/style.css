@@ -28,7 +28,7 @@ body {
   font-weight: normal;
   border: 2px solid #f1f1f1;
   position: absolute;
-  top: 80%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -40,7 +40,7 @@ body {
 #main-header .btn-smw {
   position: absolute;
   bottom: 10px;
-  left: 25px;
+  left: 20px;
 }
 
 #main-header .port-item {
