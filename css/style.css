@@ -9,9 +9,20 @@ body {
   overflow: auto;
 }
 
-#main-header img {
+#main-header .img {
   width: 100%;
   height: 100%;
+}
+
+#main-header .card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  //object-fit: cover;
+}
+
+#main-header .btn-smw {
+  position: absolute;
+  bottom: 30px;
+  left: 15px;
 }
 
 #main-header .port-item {
@@ -23,14 +34,6 @@ body {
   cursor: pointer;
 }
 
-/*#main-header .type-writer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  padding: 0 3rem;
-}*/
-
 .bg-black {
   color: #fff;
   background: #3a3130;
@@ -40,15 +43,6 @@ h5 {
   font-weight: 200;
   margin: 0.4rem;
 }
-
-/*.captcha {
-  max-width: 100% !important;
-  transform: scale(0.85) !important;
-  -webkit-transform: scale(0.85) !important;
-  transform-origin: left center !important;
-  -webkit-transform-origin: left center !important;
-  margin-left: 5px;
-}*/
 
 /* Cursor */
 .txt-type > .txt {
