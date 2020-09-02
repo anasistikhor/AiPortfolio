@@ -10,12 +10,15 @@ var Messenger = function (el) {
     m.messages = [
       "Hi! My name is Anas.",
       "I am a Full Stack Developer.",
-      "and...",
+      "and",
       "a WordPress & Shopify Expert,",
-      "also,",
+      "also",
       "an SEO Specialist.",
-      "Let&rsquo;s Build Something Together.",
-      "Get In Touch Now!",
+      "Need Help?",
+      "Connect With Me.",
+      "Otherwise",
+      "Let&rsquo;s Build Something Amazing Together.",
+      "Get In Touch Today.",
     ];
 
     setTimeout(m.animateIn, 100);
