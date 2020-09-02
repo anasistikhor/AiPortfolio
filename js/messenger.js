@@ -11,14 +11,12 @@ var Messenger = function (el) {
       "Hi! My name is Anas.",
       "I am a Full Stack Developer.",
       "and",
-      "a WordPress & Shopify Expert,",
+      "WordPress & Shopify Expert,",
       "also",
       "an SEO Specialist.",
       "Need Help?",
-      "Connect With Me.",
-      "Otherwise",
-      "Let&rsquo;s Build Something Amazing Together.",
-      "Get In Touch Today.",
+      "Let&rsquo;s discuss your needs in detail.",
+      "Connect with me today.",
     ];
 
     setTimeout(m.animateIn, 100);
