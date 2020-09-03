@@ -11,7 +11,7 @@ var Messenger = function (el) {
       "Hi! My name is Anas.",
       "I am a Full Stack Developer.",
       "and",
-      "WordPress & Shopify Expert,",
+      "a WordPress & Shopify Expert,",
       "also",
       "an SEO Specialist.",
       "Need Help?",
