@@ -67,11 +67,22 @@ body {
 }
 
 #skills .responsive-img {
-  display: block;
-  max-width: 50%;
+  display: grid;
+  max-width: 30%;
+  width: auto;
   height: auto;
   margin: auto;
   padding-bottom: 10px;
+}
+@media (max-width: 480px) {
+  .responsive-img {
+    background-size: contain;
+  }
+}
+@media (min-width: 481px) {
+  .responsive-img {
+    background-size: contain;
+  }
 }
 
 /*AboutPage-card-deck-bg-color*/
@@ -89,6 +100,91 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 0.5rem;
 }
+
+/*WorkPage-scroll portfolio
+.contain-work {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #00101d;
+}
+.contain-work:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background: #2196f3;
+  transform: skewY(-5deg);
+}
+.contain-work .mac {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  width: 606px;
+  height: 489px;
+}
+.contain-work .mac .imgBx {
+  position: absolute;
+  top: 24px;
+  left: 25px;
+  width: 555px;
+  height: 313px;
+  background: url(/desktopWebsite.jpg);
+  background-position: top;
+  background-size: 100%;
+  transition: 5s linear;
+}
+.contain-work .mac .imgBx:hover {
+  background-position: bottom;
+}
+.contain-work .macBook {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  z-index: 1;
+  width: 609px;
+  height: 362px;
+}
+.contain-work .macBook .imgBx {
+  position: absolute;
+  top: 20px;
+  left: 72px;
+  width: 465px;
+  height: 291px;
+  background: url(/desktopWebsite.jpg);
+  background-position: top;
+  background-size: 100%;
+  transition: 5s linear;
+}
+.contain-work .macBook .imgBx:hover {
+  background-position: bottom;
+}
+.contain-work .iphone {
+  position: absolute;
+  top: 40%;
+  left: 12%;
+  width: 245px;
+  height: 383px;
+  z-index: 2;
+}
+.contain-work .iphone .imgBx {
+  position: absolute;
+  top: 46px;
+  left: 44px;
+  width: 157px;
+  height: 282px;
+  background: url(/mobileWebsite.jpg);
+  background-position: top;
+  background-size: 100%;
+  transition: 15s linear;
+}
+.contain-work .iphone .imgBx:hover {
+  background-position: bottom;
+}*/
 
 /* Cursor */
 .txt-type > .txt {
