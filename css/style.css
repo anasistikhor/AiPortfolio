@@ -69,21 +69,13 @@ body {
 #skills .responsive-img {
   display: grid;
   max-width: 30%;
-  width: auto;
+  width: 100%;
   height: auto;
   margin: auto;
   padding-bottom: 10px;
 }
-@media (max-width: 480px) {
-  .responsive-img {
-    background-size: contain;
-  }
-}
-@media (min-width: 481px) {
-  .responsive-img {
-    background-size: contain;
-  }
-}
+
+
 
 /*AboutPage-card-deck-bg-color*/
 .card-about {
@@ -205,3 +197,4 @@ body {
     padding: 3em !important;
   }
 }
+
