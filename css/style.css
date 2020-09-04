@@ -62,9 +62,33 @@ body {
   background: #3a3130;
 }
 
-h5 {
+.typewriter {
   font-weight: 200;
   margin: 0.4rem;
+}
+
+#skills .responsive-img {
+  display: block;
+  max-width: 50%;
+  height: auto;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+/*AboutPage-card-deck-bg-color*/
+.card-about {
+  background: #dbead5;
+}
+.card-about1 {
+  background: #ffffdf;
+}
+.card-about2 {
+  background: #ffdfd4;
+}
+.card-deck {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 0.5rem;
 }
 
 /* Cursor */
