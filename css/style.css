@@ -15,10 +15,9 @@ body {
 }
 
 #main-header .card-img-overlay {
-  background-color: rgba(46, 49, 49, 0.4);
   object-fit: cover;
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 #messenger {
@@ -72,7 +71,7 @@ body {
   max-width: 50%;
   height: auto;
   margin: auto;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 /*AboutPage-card-deck-bg-color*/
