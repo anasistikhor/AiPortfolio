@@ -66,7 +66,7 @@ body {
   margin: 0.4rem;
 }
 
-#skills .responsive-img {
+.responsive-img {
   display: grid;
   max-width: 30%;
   width: 100%;
@@ -74,8 +74,6 @@ body {
   margin: auto;
   padding-bottom: 10px;
 }
-
-
 
 /*AboutPage-card-deck-bg-color*/
 .card-about {
@@ -197,4 +195,3 @@ body {
     padding: 3em !important;
   }
 }
-
