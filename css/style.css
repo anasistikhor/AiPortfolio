@@ -73,6 +73,14 @@ body {
   height: auto;
   margin: auto;
   padding-bottom: 10px;
+  
+}
+
+@media (max-width: 1199px) {
+  .responsive-img {
+    max-width: 70%;
+    width: 100%;
+  }
 }
 
 /*AboutPage-card-deck-bg-color*/
@@ -82,7 +90,7 @@ body {
 .card-about1 {
   background: #ffffdf;
 }
-.card-about2 {
+.card-about2, .bg-lightred {
   background: #ffdfd4;
 }
 .card-deck {
