@@ -73,7 +73,6 @@ body {
   height: auto;
   margin: auto;
   padding-bottom: 10px;
-  
 }
 
 @media (max-width: 1199px) {
@@ -90,7 +89,8 @@ body {
 .card-about1 {
   background: #ffffdf;
 }
-.card-about2, .bg-lightred {
+.card-about2,
+.bg-lightred {
   background: #ffdfd4;
 }
 .card-deck {
@@ -183,6 +183,12 @@ body {
 .contain-work .iphone .imgBx:hover {
   background-position: bottom;
 }*/
+
+/*Form*/
+.form-control:focus {
+  border-color: #ffdfd4;
+  box-shadow: 0 0 0 0.2rem rgba(255, 223, 212, 0.6);
+}
 
 /* Cursor */
 .txt-type > .txt {
