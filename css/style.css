@@ -84,14 +84,13 @@ body {
 
 /*AboutPage-card-deck-bg-color*/
 .card-about {
-  background: #dbead5;
+  background: #c6ffab;
 }
 .card-about1 {
-  background: #ffffdf;
+  background: #ffffbc;
 }
-.card-about2,
-.bg-lightred {
-  background: #ffdfd4;
+.card-about2 {
+  background: #ffcccc;
 }
 .card-deck {
   display: grid;
@@ -185,9 +184,12 @@ body {
 }*/
 
 /*Form*/
+.form-control {
+  border: 1px solid #fc5132;
+}
 .form-control:focus {
-  border-color: #ffdfd4;
-  box-shadow: 0 0 0 0.2rem rgba(255, 223, 212, 0.6);
+  border-color: #bb0000;
+  box-shadow: 0 0 0 0.1rem rgba(187, 0, 0, 0.25);
 }
 
 /* Cursor */
