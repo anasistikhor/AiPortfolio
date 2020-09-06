@@ -603,68 +603,71 @@
           <h3 class="text-primary text-center">Get In Touch.</h3>
           
           <hr class="border border-light my-3"/>
-          
+          <div class="mx-auto">
           <p class="text-center text-muted">For questions, inquiries, or generally favorable conversation, send me an email 
             <a href="mailto:anas@istikhor.com?Subject=Hello">
               here</a> or use the form below.</p>
-          <div class="mx-auto">
-            <form name='mainContact' method='POST'><input type='hidden' name='form-name' value='mainContact' />
-              <div class="row">
+              <form name='mainContact' method='POST'><input type='hidden' name='form-name' value='mainContact' />
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label class="text-primary" for="name">Name</label>
+                      <input
+                        name="name"
+                        type="text"
+                        class="form-control bg-light"
+                        id="name"
+                        required/>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label class="text-primary" for="email">Email</label>
+                      <input
+                        name="email"
+                        type="email"
+                        class="form-control bg-light"
+                        id="email"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
                 <div class="col-sm-6">
                   <div class="form-group">
-                    <label class="text-primary" for="name">Name</label>
-                    <input
-                      name="name"
+                    <label class="text-primary" for="subject">Subject</label>
+                      <input
+                      name="subject"
                       type="text"
                       class="form-control bg-light"
-                      id="name"
-                      required/>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label class="text-primary" for="email">Email</label>
-                    <input
-                      name="email"
-                      type="email"
-                      class="form-control bg-light"
-                      id="email"
+                      id="subject"
                       required
-                    />
+                      />
                   </div>
                 </div>
+                </div>
+                <div class="form-group">
+                  <label class="text-primary" for="message">Message</label>
+                  <textarea
+                    name="message"
+                    class="form-control bg-light"
+                    id="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                  <small class="font-italic form-text text-muted">All fields are required</small>
+                </div>                
+      
+                <p>
+                <div class="text-left">
+                  <button type="submit" class="btn btn-primary shadow rounded">
+                    <i class="fa fa-paper-plane fa-2x"></i> Send
+                  </button>
+                </div>
+                </p>
+              </form>
               </div>
-              <div class="form-group">
-                <label class="text-primary" for="subject">Subject</label>
-                <input
-                  name="subject"
-                  type="text"
-                  class="form-control bg-light"
-                  id="subject"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label class="text-primary" for="message">Message</label>
-                <textarea
-                  name="message"
-                  class="form-control bg-light"
-                  id="message"
-                  rows="5"
-                  required
-                ></textarea>
-                <small class="font-italic form-text text-muted">All fields are required</small>
-              </div>                
-    
-              <p>
-              <div class="text-left">
-                <button type="submit" class="btn btn-primary shadow rounded">
-                  <i class="fa fa-paper-plane fa-2x"></i> Send
-                </button>
-              </div>
-              </p>
-            </form>
-          </div>
         </div>
       </div>
 
