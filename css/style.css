@@ -75,13 +75,6 @@ body {
   padding-bottom: 10px;
 }
 
-@media (max-width: 1199px) {
-  .responsive-img {
-    max-width: 100%;
-    width: 100%;
-  }
-}
-
 /*AboutPage-card-deck-bg-color*/
 .card-about {
   background: #c6ffab;
@@ -107,9 +100,6 @@ body {
   border-color: #bb0000;
   box-shadow: 0 0 0 0.1rem rgba(187, 0, 0, 0.25);
 }
-/*.form-control:valid {
-  background-color:  #ffffff!important;
-}*/
 
 /* Cursor */
 .txt-type > .txt {
@@ -125,8 +115,28 @@ body {
   }
 }
 
+/* MediaQueries */
+
+/* portfolio-main-buttons */
 @media (min-width: 1199px) {
   .port-item {
     padding: 3em !important;
+  }
+}
+
+/* responsive-logo-img */
+@media (max-width: 1199px) {
+  .responsive-img {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  .responsive-img {
+    max-width: 50%;
+  }
+}
+@media (min-width: 990px) {
+  .responsive-img {
+    max-width: 40%;
   }
 }
