@@ -608,7 +608,8 @@
           <p class="text-muted">For questions, inquiries, or generally favorable conversation, send me an email 
             <a href="mailto:anas@istikhor.com?Subject=Hello">
               here</a> or use the form below.</p>
-              <form name='mainContact' method='POST'><input type='hidden' name='form-name' value='mainContact' />
+
+              <form name="mainContact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
@@ -658,7 +659,10 @@
                     required
                   ></textarea>
                   <small class="font-italic form-text text-muted">All fields are required</small>
-                </div>                
+                </div>    
+                <p class="hidden">
+                  <label class="text-muted">Don’t fill this out if you're human: <input class="border border-muted" name="bot-field"/></label>
+                </p>            
       
                 <p>
                 <div class="text-left">
@@ -678,9 +682,10 @@
         <hr class="border border-muted my-auto"/>
           
             <div class="row py-3 d-flex align-items-center">
-              <div class="col-md-12 text-center">
-                <p class="text-muted">
-                  finely crafted with
+              <div class="col-md-12 text-right">
+                <small class="text-muted">
+                  <span id="year" class="far fa-copyright text-muted"></span>
+                  Coded With
                   <span style="color: #e85455;"
                     ><i class="fas fa-heart mr-1"></i
                   ></span>
@@ -691,8 +696,8 @@
                   <a href="https://github.com/anasistikhor" target="_blank"
                     ><i class="fab fa-github text-white mr-2"></i
                   ></a-->
-                  <span id="year" class="far fa-copyright text-muted"></span>
-                </p>
+                  
+                </small>
               </div>
             </div>
           
