@@ -94,11 +94,19 @@ body {
 /*Form*/
 .form-control {
   //border: 1px solid #fc5132;
+  background: none;
   border: none;
+  border-bottom: 1px solid #292b2c;
+  box-shadow: none;
 }
 .form-control:focus {
-  border-color: #bb0000;
-  box-shadow: 0 0 0 0.1rem rgba(187, 0, 0, 0.25);
+  background: #f7f7f7;
+  //box-shadow: 0 0 0 0.1rem rgba(187, 0, 0, 0.25);
+  border-bottom: 1px solid #292b2c;
+  box-shadow: none;
+}
+.form-control:valid {
+  background: #f7f7f7;
 }
 
 /* Cursor */
