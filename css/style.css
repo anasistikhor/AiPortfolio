@@ -100,6 +100,9 @@ body {
   border-color: #bb0000;
   box-shadow: 0 0 0 0.1rem rgba(187, 0, 0, 0.25);
 }
+/*.form-control:valid {
+  background-color:  #ffffff!important;
+}*/
 
 /* Cursor */
 .txt-type > .txt {
@@ -116,7 +119,6 @@ body {
 }
 
 /* MediaQueries */
-
 /* portfolio-main-buttons */
 @media (min-width: 1199px) {
   .port-item {
