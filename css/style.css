@@ -129,7 +129,7 @@ body {
 /* responsive-logo-img */
 @media (max-width: 1199px) {
   .responsive-img {
-    max-width: 100%;
+    max-width: 60%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 990px) {
