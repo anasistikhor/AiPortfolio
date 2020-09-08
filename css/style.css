@@ -74,6 +74,7 @@ body {
 .card-about1 {
   background: #ffffbc;
 }
+
 .card-about2 {
   background: #ffcccc;
 }
@@ -83,16 +84,18 @@ body {
   grid-gap: 0.5rem;
 }
 
+/* Work */
+
 /*Form*/
 .form-control {
   //border: 1px solid #fc5132;
-  background: none;
+  background: #f7f7f7;
   border: none;
   border-bottom: 1px solid #292b2c;
   box-shadow: none;
 }
 .form-control:focus {
-  background: #f7f7f7;
+  background: none;
   //box-shadow: 0 0 0 0.1rem rgba(187, 0, 0, 0.25);
   border-bottom: 1px solid #292b2c;
   box-shadow: none;
@@ -123,215 +126,56 @@ body {
   }
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* Styles */
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
   .responsive-img {
     width: 100%;
   }
 }
 
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  /* Styles */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
   .responsive-img {
-    width: 100%;
+    width: 50%;
   }
 }
 
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-  /* Styles */
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
   .responsive-img {
-    width: 100%;
+    width: 40%;
   }
 }
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles */
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
   .responsive-img {
     width: 30%;
   }
 }
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
 
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* Styles */
-  .responsive-img {
-    width: 30%;
-  }
-}
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* Styles */
-  .responsive-img {
-    width: 30%;
-  }
-}
-/**********
-  iPad 3
-  **********/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  /* Styles */
-  .responsive-img {
-    width: 30%;
-  }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  /* Styles */
-  .responsive-img {
-    width: 30%;
-  }
-}
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  /* Styles */
-  .responsive-img {
-    width: 30%;
-  }
-}
-
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
-  /* Styles */
-  .responsive-img {
-    width: 30%;
-  }
-}
-
-/* iPhone 4 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  /* Styles */
-  .responsive-img {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  /* Styles */
-  .responsive-img {
-    width: 100%;
-  }
-}
-
-/* iPhone 5 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
-  .responsive-img {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
-  .responsive-img {
-    width: 100%;
-  }
-}
-
-/* iPhone 6, 7, 8 ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
-  .responsive-img {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
-  .responsive-img {
-    width: 100%;
-  }
-}
-
-/* iPhone 6+, 7+, 8+ ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
-  .responsive-img {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
-  .responsive-img {
-    width: 100%;
-  }
-}
-
-/* iPhone X ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-  /* Styles */
-  .responsive-img {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  /* Styles */
-  .responsive-img {
-    width: 100%;
-  }
-}
-
-/* iPhone XS Max, XR ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-  /* Styles */
-  .responsive-img {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  /* Styles */
-  .responsive-img {
-    width: 100%;
-  }
-}
-
-/* Samsung Galaxy S3 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
-  .responsive-img {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
-  .responsive-img {
-    width: 100%;
-  }
-}
-
-/* Samsung Galaxy S4 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-  /* Styles */
-  .responsive-img {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  /* Styles */
-  .responsive-img {
-    width: 100%;
-  }
-}
-
-/* Samsung Galaxy S5 ----------- */
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-  /* Styles */
-  .responsive-img {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  /* Styles */
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) {
   .responsive-img {
     width: 100%;
   }
