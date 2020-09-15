@@ -591,7 +591,7 @@
                   </div>
                 </div>
                 <div class="text-left">
-                  <button id="okButton" disabled type="submit" class="btn btn-success shadow rounded"><i class="fa fa-paper-plane fa-2x"></i> Send</button>
+                  <button id="submitButton" disabled class="btn btn-success shadow rounded"><i class="fa fa-paper-plane fa-2x"></i> Send</button>
                 </div>
               </form>
             </div>
@@ -643,19 +643,19 @@
     <script>
       const signUpForm = document.getElementById('signUpForm');
       const emailField = document.getElementById('emailField');
-      const okButton = document.getElementById('okButton');
+      const submitButton = document.getElementById('submitButton');
         
       emailField.addEventListener('keyup', function (event) {
         isValidEmail = emailField.checkValidity();
         
         if ( isValidEmail ) {
-          okButton.disabled = false;
+          submitButton.disabled = false;
         } else {
-          okButton.disabled = true;
+          submitButton.disabled = true;
         }
       });
         
-      okButton.addEventListener('click', function (event) {
+      submitButton.addEventListener('click', function (event) {
         signUpForm.submit();
       });
     </script>
