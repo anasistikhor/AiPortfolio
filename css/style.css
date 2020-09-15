@@ -104,6 +104,13 @@ body {
   background: #f7f7f7;
 }
 
+.email-field:valid {
+  border-color: black;
+}
+.email-field:invalid {
+  border-color: red;
+}
+
 /* Cursor */
 .txt-type > .txt {
   border-right: 0.2rem solid #fff;
