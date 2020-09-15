@@ -560,15 +560,17 @@
 
             <!-- form -->
             <div class="py-3">
-              <form id="needs-validation" novalidate name="mainContact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <form id="needs-validation signUpForm" novalidate name="mainContact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                 <div class="row">
                   <div class="col-md-6 mb-3">
                     <div class="form-group">
-                      <label class="text-primary" for="name">Name</label>
+                      <label class="text-primary" for="name"></label>
                       <input
                         name="name"
                         type="text"
                         class="form-control"
+                        placeholder="Name"
+                        onfocus="this.value=''"
                         id="name"
                         required/>
                         
@@ -576,11 +578,13 @@
                   </div>
                   <div class="col-md-6 mb-3">
                     <div class="form-group">
-                      <label class="text-primary" for="email">Email</label>
+                      <label class="text-primary" for="email"></label>
                       <input
                         name="email"
                         type="email"
                         class="form-control" aria-describedby="inputGroupPrepend"
+                        placeholder="Email"
+                        onfocus="this.value=''"
                         id="email"
                         required
                       />
@@ -593,11 +597,13 @@
                 <div class="row">
                 <div class="col-md-6 mb-3">
                   <div class="form-group">
-                    <label class="text-primary" for="subject">Subject</label>
+                    <label class="text-primary" for="subject"></label>
                       <input
                       name="subject"
                       type="text"
                       class="form-control"
+                      placeholder="Subject"
+                      onfocus="this.value=''"
                       id="subject"
                       required
                       />
@@ -605,10 +611,12 @@
                 </div>
                 </div>
                 <div class="form-group">
-                  <label class="text-primary" for="message">Let me know what you're looking for and how I can help.</label>
+                  <label class="text-primary" for="message"></label>
                   <textarea
                     name="message"
                     class="form-control"
+                    placeholder="Let me know what you're looking for and how I can help."
+                    onfocus="this.value=''"
                     id="message"
                     rows="5"
                     required
@@ -619,13 +627,13 @@
       
                 <p>
                 <div class="text-left">
-                  <button type="submit" class="btn btn-success shadow rounded">
+                  <button id="okButton" disabled type="submit" class="btn btn-success shadow rounded">
                     <i class="fa fa-paper-plane fa-2x"></i> Send
                   </button>
                 </div>
                 </p>
                 <p class="hidden">
-                  <label class="text-black-50">Don’t fill this box if you're human: <input class="border border-dark" name="bot-field"/></label>
+                  <label class="text-white">Don’t fill this box if you're human: <input class="border border-white" name="bot-field"/></label>
                 </p>    
               </form>
                 <!-- /form -->
@@ -674,26 +682,27 @@
       });
     </script>
     
+    <!-- form script-->
     <script>
-      
-      (function() {
-        'use strict';
-        window.addEventListener('load', function() {
-          
-          var forms = document.getElementsByClassName('needs-validation');
-          
-          var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-              if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-              form.classList.add('was-validated');
-            }, false);
-          });
-        }, false);
-      })();
-      </script>  
+      const signUpForm = document.getElementById('signUpForm');
+      const email = document.getElementById('email');
+      const okButton = document.getElementById('okButton');
+        
+      email.addEventListener('keyup', function (event) {
+        isValidEmail = email.checkValidity();
+        
+        if ( isValidEmail ) {
+          okButton.disabled = false;
+        } else {
+          okButton.disabled = true;
+        }
+      });
+        
+      okButton.addEventListener('click', function (event) {
+        signUpForm.submit();
+      });
+    </script>
+    <!-- /form script-->
     <script src="js/typewriter.js"></script>
     <script src="js/messenger.js"></script>
   </body>
