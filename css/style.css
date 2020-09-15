@@ -104,13 +104,6 @@ body {
 .form-control:valid {
   background: #f7f7f7;
 }
-
-.email-field:valid {
-  border-color: #008000;
-}
-.email-field:invalid {
-  border-color: #ff0000;
-}
 /* /Form */
 
 /* Cursor */
