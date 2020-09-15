@@ -585,7 +585,7 @@
                         class="form-control email-field" 
                         placeholder="Email"
                         
-                        id="email"
+                        id="emailField"
                         required
                       />
                 
@@ -632,7 +632,6 @@
                 </p>   
               </form>
                 <!-- /form -->
-            </div>
         </div>
       </div>
       <!-- /CONTACT --><!-- background letak ukiran batik kayu-->
@@ -680,11 +679,11 @@
     <!-- form script-->
     <script>
       const signUpForm = document.getElementById('signUpForm');
-      const email = document.getElementById('email');
+      const emailField = document.getElementById('emailField');
       const okButton = document.getElementById('okButton');
         
-      email.addEventListener('keyup', function (event) {
-        isValidEmail = email.checkValidity();
+      emailField.addEventListener('keyup', function (event) {
+        isValidEmail = emailField.checkValidity();
         
         if ( isValidEmail ) {
           okButton.disabled = false;

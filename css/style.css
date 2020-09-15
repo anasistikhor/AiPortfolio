@@ -85,6 +85,7 @@ body {
 }
 
 /* Work */
+/* /Work */
 
 /*Form*/
 .form-control {
@@ -110,6 +111,7 @@ body {
 .email-field:invalid {
   border-color: red;
 }
+/* /Form */
 
 /* Cursor */
 .txt-type > .txt {
@@ -124,6 +126,7 @@ body {
     border-right-color: transparent;
   }
 }
+/* /Cursor */
 
 /* MediaQueries */
 /* portfolio-main-buttons */
