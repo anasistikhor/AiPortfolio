@@ -91,7 +91,7 @@ body {
 .form-control {
   //border: 1px solid #fc5132;
   background: #f7f7f7;
-  //border: none;
+  border: none;
   //border: 1px solid #292b2c;
   box-shadow: none;
 }
