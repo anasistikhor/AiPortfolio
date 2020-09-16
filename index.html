@@ -632,38 +632,16 @@
       integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"
     ></script>
-
     <script>
       // Get the current year for the copyright
       $("#year").text(new Date().getFullYear());
-
+      // potfolio buttons
       $(".port-item").click(function () {
         $(".collapse").collapse("hide");
       });
     </script>
-    
     <!-- form script-->
-    <script>
-    var inputName = document.getElementById('input-name');
-    var inputMail = document.getElementById('input-email');
-    var inputSubject = document.getElementById('input-subject');
-    var inputMessage = document.getElementById('input-message');
-    var button = document.querySelector('.submit-button');
-    var regEx = /\S+@\S+\.\S+/;
-    var form = document.querySelector('.form')
-
-    function checkInput() {
-        if (inputName.value.trim() !== "" && regEx.test(inputMail.value) && inputSubject.value.trim() !== "" && inputMessage.value.trim() !== "") {
-            
-        button.disabled = false;
-        } else {    
-        button.disabled = true;
-        }
-    }
-    form.addEventListener('submit', function(event) {
-        form.submit();   
-    })
-    </script>
+    <script src="js/form.js"></script>
     <!-- /form script-->
     <script src="js/typewriter.js"></script>
     <script src="js/messenger.js"></script>
