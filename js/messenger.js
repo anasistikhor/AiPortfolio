@@ -9,7 +9,7 @@ var Messenger = function (el) {
     m.fadeBuffer = false
     m.messages = [
       'Hi! My name is Anas.',
-      // "I am a Full Stack Developer.",
+      'I am a Full Stack Developer.',
       // "and",
       // "a WordPress & Shopify Expert,",
       // "also",
